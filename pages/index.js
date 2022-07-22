@@ -11,7 +11,7 @@ export default function Home() {
       </div>
       {/* Map */}
       <div className = {style.rightRequestContainer}>
-        <div className= >
+        <div className={style.rideRequest} >
 
         </div>
       </div>
