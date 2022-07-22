@@ -5,7 +5,7 @@ const style = {
     wrapper: `flex-1 h-full w-full`
 }
 
-mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN
+mapboxgl.accessToken = 'pk.eyJ1IjoidGhlYm95YnJleSIsImEiOiJjbDV3Z2NnMDgwNHN0M2ZvYWhsbGhmcTA4In0.FufMsKI22xLkhcr3o5lGNA'
 
 
 const Map = () => {
@@ -14,7 +14,8 @@ const Map = () => {
             container: 'map',
             style: 'mapbox://styles/drakosi/ckvcwg3rwdw4314o3i2ho8tph',
             center: [-99.29011, 39.39172],
-            zoom: 2.5,
+            zoom: 3,
+            projection: 'globe',
         })
     })
 
