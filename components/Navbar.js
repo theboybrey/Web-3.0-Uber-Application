@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import avatar from '../temp/avatar.jpg'
+import avatar from '../temp/avatar.png'
 
 // Style
 const style = {
