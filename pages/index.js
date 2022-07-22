@@ -1,11 +1,21 @@
-import Head from 'next/head'
-import Image from 'next/image'
-
+const style = {
+  wrapper: `h-screen w-screen flex flex-cl`,
+}
 
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold underline bg-red-600">
-    Hello world!
-  </h1>
+    <div className= {style.wrapper}>
+      {/* Navbar*/}
+      <div className= {style.main}>
+
+      </div>
+      {/* Map */}
+      <div className = {style.rightRequestContainer}>
+        <div className= >
+
+        </div>
+      </div>
+
+    </div>
   )
 }
