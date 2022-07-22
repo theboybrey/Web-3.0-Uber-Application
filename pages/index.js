@@ -12,8 +12,10 @@ export default function Home() {
       {/* Map */}
       <div className = {style.rightRequestContainer}>
         <div className={style.rideRequest} >
-
+      {/* Locaation Selector */}
+      {/* Ride Confirmation */}
         </div>
+
       </div>
 
     </div>
