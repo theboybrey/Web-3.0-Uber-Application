@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import avatar from '../temp/avatar.png'
+import {BsPerson} from 'react-icons/bs'
 
 // Style
 const style = {
@@ -9,9 +10,13 @@ const style = {
     menuItem: `text-lg text-white font-medium flex items-center mx-4 cursor-pointer`,
     rightMenu: `flex gap-3 items-center`,
     userImageContainer: `mr-2`,
-    userImage: `h-10 w-10 mr-4 rounded-full p-px object-cover cursor-pointer`
-
+    userImage: `h-10 w-10 mr-4 rounded-full p-px object-cover cursor-pointer`,
+    loginButton: `flex items-center cursor-pointer  rounded hover:bg-[#333333] px-4 py-1`,
+    loginText: `ml-2`
 }
+
+const currentAccount = '0x6E4ec63288f0f8cFa1606cf4d5D149e8faa7c0e8';
+
 const Navbar = () => {
     return (
         <div className={style.wrapper}>
@@ -32,7 +37,14 @@ const Navbar = () => {
                     height = {40}/>
                 </div>
             </div>
-            <div>0x0000...0000</div>
+            {currentAccount ? (
+                <div>{currentAccount.slice(0, 6)}....{currentAccount.slice(38)}</div>
+            ) : (
+                <div className = {style.loginButton}>
+                <BsPerson />
+                <span className= {style.loginText}>Login</span>    
+                </div>
+            )}
         </div>
     )
 }
